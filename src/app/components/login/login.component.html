@@ -1,0 +1,9 @@
+<section>
+  <!-- Login Form -->
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" id="login" class="fadeIn second" name="login" placeholder="user name" formControlName="username">
+    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password"
+      formControlName="password">
+    <input type="submit" class="fadeIn fourth" value="Log In" [disabled]="form.invalid">
+  </form>
+</section>
